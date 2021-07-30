@@ -1,0 +1,33 @@
+body {
+    padding: 100px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: royalblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding : 50px;
+    position: relative;
+}
+
+.container .item {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    transform: skewX(-15deg);
+    border-radius: 10px;
+    /* opacity: 0.5; */
+    margin: 5px;
+    transition : .5s;
+    
+}
+
+.container .item:hover {
+    transform: scale(1.5) skew(-15deg);
+    flex-shrink: 0;
+    border:1px solid black;
+    z-index: 1;
+}
